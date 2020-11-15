@@ -1,6 +1,6 @@
 
 public class FinalKeySample {
-	//Can't create one method with same final methd of the extended class.
+	//Can't create one method with same final method of the extended class.
 	//public void methodFinal();
 	int a=12; //can create a variable with same name.
 	public static void main(String[] args) {
