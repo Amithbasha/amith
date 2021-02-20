@@ -1,27 +1,28 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
 
 public class ArrayListExample {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		ArrayList<String> List = new ArrayList<String>();
 		List.add("red");
 		List.add("black");
-		List.add(0,"blue");
-		List.set(0,"green");
+		List.add(0, "blue");
+		List.set(0, "green");
 		ArrayList<String> ListDuplicate = (ArrayList<String>) List.clone();
 		List.addAll(ListDuplicate);
 		int ListSize = List.size(); /** For get the no.of items in the arrayList */
 		int pos = List.indexOf("black"); /** for get the position of the element */
-		
+		System.out.println("Size :" + ListSize + " || Index : " + pos);
 		System.out.println(List);
-		/** for sorting in asending order */
+		/** for sorting in ascending order */
 		Collections.sort(List);
 		System.out.println(List);
 		/** for sorting in descending order */
-		Collections.sort(List,Collections.reverseOrder());
+		Collections.sort(List, Collections.reverseOrder());
 		System.out.println(List);
 		/** for get the element by its position */
 		System.out.println(List.get(2));
 		System.out.println(ListDuplicate);
-		
+
 	}
 }
